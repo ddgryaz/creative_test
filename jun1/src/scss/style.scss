@@ -1,7 +1,7 @@
 @import "null";
 
 body {
-  background-color: #EEF1F4;
+  background-color: #E5C8A8;
   display: flex;
   flex-direction: column;
 
@@ -10,7 +10,7 @@ body {
     justify-content: space-around;
     height: 13vh;
     width: 100vw;
-    background-color: #4F5A6E;
+    background-color: #554B38;
     opacity: 80%;
     border: 1px solid black;
 
@@ -23,7 +23,7 @@ body {
         font-size: 20px;
 
         &:hover {
-          color: red;
+          color: black;
         }
       }
     }
@@ -31,18 +31,19 @@ body {
 
     .button_menu {
       margin-top: 15%;
-      border-radius: 10px;
+      border-radius: 15px;
       height: 7vh;
-      width: 9vw;
-      background-color: #59A969;
-      border: 10px solid darkgreen;
+      width: 11vw;
+      background-color: #DCD0BA;
+      border: 5px solid #3B3024;
       outline: none;
 
       &:hover {
-        background-color: #96D9FF;
+        background-color: #3B3024;
         cursor: pointer;
-        border-color: #59A969;
-        background-color: darkgreen;
+        border-color: #DCD0BA;
+        background-color: #3B3024;
+        color: #DCD0BA;
       }
     }
   }
@@ -53,22 +54,25 @@ body {
     bottom: 0;
     width: 30vw;
     height: 87vh;
-    background-color: #59A969;
+    background-color: #977961;
     border: 1px solid black;
     border-top: 0px;
     transition: 0.5s;
 
+    .items {
+      color: #3B3024;
+      font-size: 24px;
+      font-family: Gargi;
+    }
   }
 
-  .creative {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .text {
     position: fixed;
-    right: 30%;
-    top: 50%;
-
-
+    height: 20vh;
+    width: 40vw;
+    right: 15vw;
+    top: 30vh;
+    font-size: 20px;
   }
 
 }
