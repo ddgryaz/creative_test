@@ -1,3 +1,5 @@
 .idea
 jun1/node_modules
 jun1/dist
+src/_animation.html
+src/animation.scss
