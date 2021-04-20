@@ -21,6 +21,7 @@ body {
         text-decoration: none;
         color: lightgray;
         font-size: 20px;
+
         &:hover {
           color: red;
         }
@@ -46,21 +47,34 @@ body {
     }
   }
 
+  .menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30vw;
+    height: 87vh;
+    background-color: #59A969;
+    border: 1px solid black;
+    border-top: 0px;
+    transition: 0.5s;
+
+  }
+
+  .creative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30%;
+    top: 50%;
+
+
+  }
+
 }
 
 
-.menu {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 30vw;
-  height: 87vh;
-  background-color: #59A969;
-  border: 1px solid black;
-  border-top: 0px;
-  transition: 0.5s;
 
-}
 
 
 
