@@ -1,24 +1,30 @@
 let size_control;
+let menu = document.getElementById("menu").style;
+let elements = document.getElementById('menu__elements').style;
+
 
 window.addEventListener('resize', function () {
-    size_control = document.documentElement.clientWidth
-
+    size_control = document.documentElement.clientWidth;
     if (size_control < 1200) {
-        document.getElementById("menu").style.width = "0vw";
-        document.getElementById('menu__elements').style.display = 'none'
+        menu.width = "0vw";
+        elements.display = 'none';
     } else {
-        document.getElementById("menu").style.width = "30vw";
-        document.getElementById('menu__elements').style.display = 'block'
+        menu.width = "30vw";
+        setTimeout(() => {
+            elements.display = 'block';
+        }, 200);
     }
 });
 
+
 function menuSlide() {
-    let x = document.getElementById('menu__elements');
-    if (document.getElementById("menu").style.width == "30vw") {
-        document.getElementById("menu").style.width = "0vw";
-        document.getElementById('menu__elements').style.display = 'none'
+    if (menu.width === "30vw") {
+        menu.width = "0vw";
+        elements.display = 'none';
     } else {
-        document.getElementById("menu").style.width = "30vw";
-        document.getElementById('menu__elements').style.display = 'block'
+        menu.width = "30vw";
+        setTimeout(() => {
+            elements.display = 'block';
+        }, 200);
     }
 }
