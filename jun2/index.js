@@ -7,7 +7,7 @@ function slideArray(array, step) {
     for (let i = 0; i < step; i++) {
         array.unshift(array.pop());
     }
-    console.log(`Входной результат - ${oldArray}, шаг - ${step}. На выходе - ${array}`);
+    console.log(`Входные данные - ${oldArray}, шаг - ${step}. На выходе - ${array}`);
 }
 
 
