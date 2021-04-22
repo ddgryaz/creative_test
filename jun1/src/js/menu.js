@@ -10,9 +10,11 @@ window.addEventListener('resize', function () {
         elements.display = 'none';
     } else {
         menu.width = "30vw";
-        setTimeout(() => {
-            elements.display = 'block';
-        }, 200);
+        // Визуально приятней - но бывает при ресайзинге ломается
+        // setTimeout(() => {
+        //     elements.display = 'block';
+        // }, 200);
+        elements.display = 'block';
     }
 });
 
@@ -23,8 +25,10 @@ function menuSlide() {
         elements.display = 'none';
     } else {
         menu.width = "30vw";
-        setTimeout(() => {
-            elements.display = 'block';
-        }, 200);
+        // Визуально приятней - но бывает при ресайзинге ломается
+        // setTimeout(() => {
+        //     elements.display = 'block';
+        // }, 200);
+        elements.display = 'block';
     }
 }
