@@ -26,8 +26,8 @@ function App() {
         {id: '5', name: 'persimmon'},
         {id: '10', name: 'rowan'},
     ];
-
     const pairOfFruits = [...fruits, ...fruits];
+
 
     useEffect(() => {
         const firstMatch = pairOfFruits[openCard[0]];
@@ -39,6 +39,7 @@ function App() {
         if (openCard.length === 2) setTimeout(() => setOpenCard([]), 1000);
 
     }, [openCard])
+
 
     const handleFlip = index => {
         setOpenCard((opened) => [...opened, index])
@@ -55,7 +56,8 @@ function App() {
                     if (matched.includes(fruit.id)) flipCard = true;
 
                     return (
-                        <div className={`fruit-card ${flipCard ? "flipped" : ""}`} key={index} onClick={() => handleFlip(index)}>
+                        <div className={`fruit-card ${flipCard ? "flipped" : ""}`} key={index}
+                             onClick={() => handleFlip(index)}>
                             <div className="inner">
                                 <div className="front">
                                     <img src={`${url}${fruit.id}.jpg`}
