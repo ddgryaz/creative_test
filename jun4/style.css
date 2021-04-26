@@ -1,0 +1,66 @@
+body {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background-color: gray;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border-right: 5px solid black;
+    justify-content: space-around;
+}
+
+.items__blue {
+    width: 150px;
+    height: 150px;
+    background-color: dodgerblue;
+    border: 2px solid darkblue;
+    margin-left: 50px;
+    transition: all 2s ease;
+}
+
+.items__yellow {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 2px solid #867308;
+    margin-left: 50px;
+    transition: all 2s ease;
+}
+
+.items__red{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 2px solid darkred;
+    margin-left: 50px;
+    transition: all 2s ease;
+}
+
+.checkboxs {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border-left: 5px solid black;
+    justify-content: space-around;
+}
+
+.check {
+    margin-left: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.invisible {
+    /*display: none;*/
+    opacity: 0;
+}
